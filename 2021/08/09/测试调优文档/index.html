@@ -4,15 +4,66 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>测试调优文档 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="测试调优文档 1. spark基准测试1.1 测试方式1.1.1 TPC-DS1.1.2 Hibench1.2 测试结果1.2.1 TPC-DS1.2.1.1 100g数据产生1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606">
+<meta property="og:type" content="article">
+<meta property="og:title" content="测试调优文档">
+<meta property="og:url" content="http://example.com/2021/08/09/%E6%B5%8B%E8%AF%95%E8%B0%83%E4%BC%98%E6%96%87%E6%A1%A3/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="测试调优文档 1. spark基准测试1.1 测试方式1.1.1 TPC-DS1.1.2 Hibench1.2 测试结果1.2.1 TPC-DS1.2.1.1 100g数据产生1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210807102236216.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210802183320712-1628394960207.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210803161509808-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805120041348-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805120057688-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805120115940-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805115859023-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805141735000-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805112924534-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805112943139-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805112959007-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805113121553-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805113136008-1628394960208.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805113149817-1628394960209.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210805113204504.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210808113200481.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210808113417212.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210808113537928.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210807113629265.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210807113858127.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210807113938533.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_architecture-iteblog.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/20170712134317873.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_catalyst-iteblog.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/20200911083644648.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/antlr4_iteblog-1628309565701.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_unresolved_logical_plan-iteblog-1628309732331.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_batch_ruleexecutor-iteblog-1628309758409.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_analyzed_logical_plan-iteblog-1628309758480.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_pushdownpredicate-iteblog.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_columnpruning-iteblog.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_constantpropagation-iteblog.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_constantfolding-iteblog.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_optimizedlogicalplan-iteblog.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_cost_model-iteblog.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_physical_plan-iteblog.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_volcano_iterator_model-iteblog.jpg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_expression_evaluation-iteblog.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_wholesagecodegen-iteblog.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_dag-iteblog-1628310067147.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/memory_consumer.jpeg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/spark_shuffle.jpeg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/merge.jpeg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/shuffle_read-4.jpeg">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/1_L_-swmTl74av4hD5Cr_7Hg.png">
+<meta property="og:image" content="d:/blog/blog/source_posts/typora-user-images/1_vmq60Q7Vp6SHRTbpia6yyA.png">
+<meta property="article:published_time" content="2021-08-09T04:58:35.000Z">
+<meta property="article:modified_time" content="2021-08-09T04:59:11.615Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="d:/blog/blog/source_posts/typora-user-images/image-20210807102236216.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,9 +120,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-测试调优文档" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-测试调优文档" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/08/09/%E6%B5%8B%E8%AF%95%E8%B0%83%E4%BC%98%E6%96%87%E6%A1%A3/" class="article-date">
   <time class="dt-published" datetime="2021-08-09T04:58:35.000Z" itemprop="datePublished">2021-08-09</time>
@@ -84,8 +133,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/08/09/%E6%B5%8B%E8%AF%95%E8%B0%83%E4%BC%98%E6%96%87%E6%A1%A3/">测试调优文档</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      测试调优文档
     </h1>
   
 
@@ -706,100 +755,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-test-my-site" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/08/09/test-my-site/" class="article-date">
-  <time class="dt-published" datetime="2021-08-09T04:15:41.000Z" itemprop="datePublished">2021-08-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/08/09/test-my-site/">test_my_site</a>
-    </h1>
+    <a href="/2021/08/09/test-my-site/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">test_my_site</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/09/test-my-site/" data-id="cks46245q0000u0n94ozq7wiq" data-title="test_my_site" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/08/09/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-08-09T04:13:22.317Z" itemprop="datePublished">2021-08-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/08/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/09/hello-world/" data-id="cks46245v0001u0n9d3had8q9" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
